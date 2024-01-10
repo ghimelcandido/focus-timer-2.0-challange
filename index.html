@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo pomodoro">
+    <title>Focus Timer - Pomodoro</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="/focus-timer-project/main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div id="blockThis">
+        <section id="timerEditable" class="flex">
+            <span id="minutes">25</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class="flex"> 
+            <button>
+            <img src="assets/play.svg" alt="playBtn" data-action="playBtn">
+            </button>
+
+            <button>
+                <img src="assets/stop.svg" alt="stopBtn" data-action="pauseBtn">
+            </button>
+
+            <button>
+                <img src="assets/+.svg" alt="plusBtn" data-action="plusBtn">
+            </button>
+
+            <button>
+                <img src="assets/-.svg" alt="minusBtn" data-action="minusBtn">
+            </button>
+        </section>
+        </div>
+        
+
+        <!-- Right Side -->
+        <section id="controlsMusic" class="flex">
+        <div id="rightSide">
+            <button class="card1"><img src="assets/Card 01.svg" alt="Floresta" data-action="card1"></button>
+            <button class="card1Running"><img src="assets/Card 01 - Running.svg" alt="FlorestaRunning" data-action="card1Running"></button>
+
+            <button class="card3"><img src="assets/Card 03.svg" alt="Chuva" data-action="card3"></button>
+            <button class="card3Running"><img src="assets/Card 03 - Running.svg" alt="ChuvaRunning" data-action="card3Running"></button>
+
+            <button class="card2"><img src="assets/Card 02.svg" alt="Cafeteria" data-action="card2"></button>
+            <button class="card2Running"><img src="assets/Card 02 - Running.svg" alt="CafeteriaRunning" data-action="card2Running"></button>
+
+            <button class="card4"><img src="assets/Card 04.svg" alt="Lareira" data-action="card4"></button>
+            <button class="card4Running"><img src="assets/Card 04 - Running.svg" alt="LareiraRunning" data-action="card4Running"></button>
+        </section>
+        </div>
+</body>
+</html>
